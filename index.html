@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Dancing Script|Handlee">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FABS EVENTS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgba(255, 255, 255, 0.776);
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            background-color: aliceblue;
+            height: 30px;
+        }
+        .logo{
+            font-size: 1rem;
+        }
+        .top .contact{
+            display: flex;
+            gap: 10px;
+        }
+        .contact i,.logo{
+            height: 30px;
+            line-height: 30px;
+        }
+        .banner{
+            position: relative;
+            height: 80vh;
+            width: 100%;
+            background-image: url(banner.png);
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20%;
+            padding-top: 2%;
+            ;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            color: white;
+            gap: 10px;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .slogan{
+            margin-left: 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: fit-content;
+            left: 5%;
+            padding: 30px;
+            bottom: 30%;
+            border-radius: 5px;
+            position: absolute;
+        }
+        .slogan p{
+            font-weight: bolder;
+            color: rgb(255, 153, 0);
+            font-family: rockwell;
+            font-size: xx-large;
+            text-align: center;
+        }
+        .banner button{
+            border: none;
+            width: 200px;
+            height: 50px;
+            font-size: larger;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            padding:5px 10px;
+            position: absolute;
+            bottom: 10%;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.74);
+            left: 10%;
+        }
+        .about-us{
+            display: flex;
+        }
+        .about-us img{
+            padding-top: 10px;
+            height: auto;
+        }
+        .about-us .info{
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .about-us h1{
+            font-family: Handlee;
+            color: #E8964A;
+            font-weight: bold;
+        }
+        .services img{
 
+        }
+        .services .s{
+            position: relative;
+            overflow: hidden;
+        }
+        .services .s img{
+            aspect-ratio : 2 / 1;
+            width: 100%;
+        }
+        .services .s div{
+            background-color: rgba(240, 248, 255, 0.37);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .s div p{
+            background-color: rgba(255, 255, 255, 0.537);
+            padding:20px 30px;
+            color: #E8964A;
+            font-size: xx-large;
+            font-family: rockwell;
+        }
+        .cont-detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+        .cont-detail *{
+            text-align: center;
+        }
+        footer{
+            background-color: #BDBDBD;
+        }
+        footer p{
+            text-align: center;
+            color: black;
+            padding-top: 10px;
+        }
+        footer .social{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        .social .fa{
+            margin:0 5px;
+            padding-bottom: 5px;
+        }
+        .g-img{
+            height: 200px;
+            overflow: hidden;
+        }
+        .g-img img{
+            width: 100%;
+        }
+        .g-img-1{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .g-img-2 img{
+            width: 100%;
+            height: 100%;
+        }
+        .g-img-2 {
+        }
+        .gallery{
+            margin: 10px 30px;
+        }
+        .row{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="top container-fluid">
+        <div class="logo">FABS EVENTS</div>
+        <div class="contact">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>07082848824/0749273922</p>
+        </div>
+    </div>
+    <div class="banner">
+        <nav><ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul></nav>
+        <div class="slogan">
+            <p>Transforming your Event into <br> a Wonderland</p>
+        </div>
+        <button>Reach To Us</button>
+    </div>
+    <div class="about-us container row">
+        <div class="col-md-1"></div>
+        <img class="col-md-4" src="banner.png" alt="">
+        <div class="info col-md-7">
+            <h1>About Us</h1>
+            <p>We decorate events to make them special. Our team of 
+                designers works hard to turn your ideas into beautiful decorations, 
+                flowers, and special setups. We help make weddings
+                 and big events look amazing. We care about giving great service 
+                 to make sure your event is unforgettable. Our goal
+                 is always to make your event even better than you imagined.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="row gx-2">
+            <div class="g-img col-md-4">
+                <img src="banner.png" alt="">
+            </div>
+            <div class="g-img col-md-4">
+                <img src="banner.png" alt="">
+            </div>
+            <div class="g-img col-md-4">
+                <img src="banner.png" alt="">
+            </div>
+        </div>
+        <div class="row gx-2">
+            <div class="g-img-1 col-md-6">
+                <img src="banner.png" alt="">
+                <img src="banner.png" alt="">
+            </div>
+            <div class="g-img-2 col-md-6">
+                <img src="banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="services container">
+        <h1 style="width: 100%; text-align: center; color: #E8964A;">Our Services</h1>
+        <div class="row gx-10">
+            <div class="s col-md-4">
+                <div><p>Wedding</p></div>
+                <img src="banner.png" alt="">
+            </div>
+            <div class="s col-md-4">
+                <div><p>Wedding</p></div>
+                <img src="banner.png" alt="">
+            </div>
+            <div class="s col-md-4">
+                <div><p>Wedding</p></div>
+                <img src="banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="appointment container row">
+        <div class="cont-detail col-md-5">
+            <h1 style='font-family: "Dancing Script", sans-serif; font-size: 55px; color: #E8964A; width: 100%; text-align: center;'>Make and Appontiment</h1>
+            <h2>FABS EVENTS</h2>
+            <p>TEL: 0709338192<br>
+                0734773838</p>
+                <p>Email: fabsevent@gmail.com</p>
+        </div>
+        <img src="banner.png" style="padding: 10px;" class="col-md-7" alt="" width="100%" height="100%">
+    </div>
+    <footer>
+        <p>@2016 -<script type="text/javascript">document.write( new Date().getFullYear() );</script> by Fabs Events & Catering. Kampala Uganda</p>
+        <div class="social">
+            <i class="fa fa-" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true" style="color:rgb(255, 98, 0); font-size: large;"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true" style="color:green; font-size: large;"></i>
+            <i class="fa fa-facebook-official" style="color:blue; font-size: large;"></i>
+        </div>
+    </footer>
+</body>
+</html>
