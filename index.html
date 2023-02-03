@@ -68,6 +68,7 @@
         }
         .slogan p{
             font-weight: bolder;
+            text-shadow: rgba(0, 0, 0, 0.493) 2px 2px 5px;
             color: rgb(255, 153, 0);
             font-family: rockwell;
             font-size: xx-large;
@@ -111,10 +112,13 @@
         .services .s{
             position: relative;
             overflow: hidden;
+            padding: 5px;
+            border-radius: 2px;
         }
         .services .s img{
             aspect-ratio : 2 / 1;
             width: 100%;
+            border-radius: 2px;
         }
         .services .s div{
             background-color: rgba(240, 248, 255, 0.37);
@@ -162,10 +166,12 @@
         }
         .g-img{
             height: 200px;
+            margin-bottom: 5px;
             overflow: hidden;
         }
         .g-img img{
             width: 100%;
+            height: 100%;
         }
         .g-img-1{
             display: flex;
@@ -184,6 +190,46 @@
         .row{
             margin: 0 !important;
             padding: 0 !important;
+        }
+        @media screen and (max-width: 450px) {
+            .slogan{
+            margin-left: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: fit-content;
+            left: 2%;
+            padding: 10px;
+            max-width: 80vw;
+            bottom: 30%;
+            right: 2%;
+            border-radius: 5px;
+            position: absolute;
+        }
+        .slogan p{
+            font-weight: bolder;
+            text-shadow: black 2px 2px 6px;
+            color: rgb(255, 153, 0);
+            font-family: rockwell;
+            font-size: x-large;
+            text-align: center;
+        }
+        .banner{
+            position: relative;
+            height: 40vh;
+            width: 100%;
+            background-image: url(banner.png);
+        }
+        .banner button{
+            bottom: 2%;
+        }
+        .gallery{
+            margin: 10px 10px;
+        }
+        .g-img-2{
+            margin-top: 2px;
+        }
+        footer p{
+            font-size: small;
+        }
         }
     </style>
 </head>
@@ -222,22 +268,22 @@
     <div class="gallery">
         <div class="row gx-2">
             <div class="g-img col-md-4">
-                <img src="banner.png" alt="">
+                <img src="img1.png" alt="">
             </div>
             <div class="g-img col-md-4">
-                <img src="banner.png" alt="">
+                <img src="Rectangle.png" alt="">
             </div>
             <div class="g-img col-md-4">
-                <img src="banner.png" alt="">
+                <img src="img3.png" alt="">
             </div>
         </div>
         <div class="row gx-2">
             <div class="g-img-1 col-md-6">
-                <img src="banner.png" alt="">
-                <img src="banner.png" alt="">
+                <img src="img4.png"style="max-height:200px" alt="">
+                <img src="banner.png" style="max-height:200px" alt="">
             </div>
             <div class="g-img-2 col-md-6">
-                <img src="banner.png" alt="">
+                <img src="img6.png" alt="">
             </div>
         </div>
     </div>
@@ -266,7 +312,7 @@
                 0734773838</p>
                 <p>Email: fabsevent@gmail.com</p>
         </div>
-        <img src="banner.png" style="padding: 10px;" class="col-md-7" alt="" width="100%" height="100%">
+        <img src="Rectangle1.png" style="padding: 10px;" class="col-md-7" alt="" width="100%" height="100%">
     </div>
     <footer>
         <p>@2016 -<script type="text/javascript">document.write( new Date().getFullYear() );</script> by Fabs Events & Catering. Kampala Uganda</p>
