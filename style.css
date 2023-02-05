@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: rgba(255, 255, 255, 0.776);
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 30px;
+}
+.logo{
+    font-size: 1rem;
+}
+.top .contact{
+    display: flex;
+    gap: 10px;
+}
+.contact i,.logo{
+    height: 30px;
+    line-height: 30px;
+}
+.banner{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20%;
+    padding-top: 2%;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.slogan{
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: fit-content;
+    left: 5%;
+    padding: 30px;
+    bottom: 30%;
+    border-radius: 5px;
+    position: absolute;
+}
+.slogan p{
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0.493) 2px 2px 5px;
+    color: rgb(255, 153, 0);
+    font-family: rockwell;
+    font-size: xx-large;
+    text-align: center;
+}
+.banner button{
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding:5px 10px;
+    position: absolute;
+    bottom: 10%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.74);
+    left: 10%;
+}
+.about-us{
+    display: flex;
+}
+.about-us img{
+    padding-top: 10px;
+    height: auto;
+}
+.about-us .info{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about-us h1{
+    font-family: Handlee;
+    color: #E8964A;
+    font-weight: bold;
+}
+.services img{
+
+}
+.services .s{
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 2px;
+}
+.services .s img{
+    aspect-ratio : 2 / 1;
+    width: 100%;
+    border-radius: 2px;
+}
+a{
+    color: white;
+}
+.services .s div{
+    background-color: rgba(240, 248, 255, 0.37);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s div p{
+    background-color: rgba(255, 255, 255, 0.537);
+    padding:20px 30px;
+    color: #E8964A;
+    font-size: xx-large;
+    font-family: rockwell;
+}
+.cont-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.cont-detail *{
+    text-align: center;
+}
+footer{
+    background-color: #BDBDBD;
+}
+footer p{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+footer .social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.social .fa{
+    margin:0 5px;
+    padding-bottom: 5px;
+}
+.g-img{
+    height: 200px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.g-img img{
+    width: 100%;
+    height: 100%;
+}
+.g-img-1{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.g-img-2 img{
+    width: 100%;
+    height: 100%;
+}
+.g-img-2 {
+}
+.gallery{
+    margin: 10px 30px;
+}
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+@media screen and (max-width: 450px) {
+    .slogan{
+    margin-left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: fit-content;
+    left: 2%;
+    padding: 10px;
+    max-width: 80vw;
+    bottom: 30%;
+    right: 2%;
+    border-radius: 5px;
+    position: absolute;
+}
+.slogan p{
+    font-weight: bolder;
+    text-shadow: black 2px 2px 6px;
+    color: rgb(255, 153, 0);
+    font-family: rockwell;
+    font-size: x-large;
+    text-align: center;
+}
+.banner{
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-image: url(banner.png);
+}
+.banner button{
+    bottom: 2%;
+}
+.gallery{
+    margin: 10px 10px;
+}
+.g-img-2{
+    margin-top: 2px;
+}
+footer p{
+    font-size: small;
+}
+.images{
+    grid-template-columns: 50% 50% !important;
+}
+}
